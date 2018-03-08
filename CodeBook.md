@@ -54,7 +54,7 @@ activity_levels using ```factor```
 ### Files output for this project
 ```run_analysis.R``` - code to create the tidy dataset
 
-```dataset.csv``` - the final tidy dataset
+```dataset.txt``` - the final tidy dataset
 
 ```readme.md``` - the ReadMe
 

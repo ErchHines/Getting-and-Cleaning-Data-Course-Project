@@ -39,14 +39,11 @@ colnames(HCI)[563] <- "activity"
 ms.HCI <- HCI[,(grepl("(subject|activity|mean\\(\\)|std\\(\\))", names(HCI)))]
 
 #### create labels for the variables in the activity column####
-#note: provided code in comments for both tables, wansn't clear if they wanted me to continue with ms.HCI or not
-# HCI$activity <- factor(HCI$activity, levels = use.labels$V1, labels = use.labels$V2)
 ms.HCI$activity <- factor(ms.HCI$activity, levels = use.labels$V1, labels = use.labels$V2)
 
 ### gets averages for each subject and activity####
-# avgHCI <- aggregate( . ~ subject + activity, data = HCI, mean)
 avg.ms.HCI <- aggregate( . ~ subject + activity, data = ms.HCI, mean)
 
-#### writes table to a second tidy data set, .csv used as preference ####
-# write.table(avgms.HCI, "dataset.txt", row.names = FALSE)
-write.csv(avg.ms.HCI, "dataset.csv", row.names = FALSE)
+#### writes table to a second tidy data set ####
+write.table(avg.ms.HCI, "dataset.txt", row.names = FALSE)
+

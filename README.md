@@ -21,5 +21,5 @@ Data can be dowloaded here: https://d396qusza40orc.cloudfront.net/getdata%2Fproj
 #### The following files are included in this repository
 
 * ```run_analysis.R``` The code to clean and present the dataset for the average of the means and stds for each subject and activity
-* ```dataset.csv``` The final tidy dataset
+* ```dataset.txt``` The final tidy dataset
 * ```CodeBook``` The CodeBook for the project
