@@ -1,8 +1,4 @@
----
-title: "CodeBook"
-author: "Erich Hines"
-date: "March 7, 2018"
----
+# CodeBook
 
 ## Introduction
 
@@ -20,7 +16,7 @@ Details on the original experiment can be found here:
 The data source can be dowloaded at:
 (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-###List of Data Tables taken from source that will be used in this project
+### List of Data Tables taken from source that will be used in this project
 * README.txt
 * features.txt
 * activity_labels.txt
@@ -31,11 +27,11 @@ The data source can be dowloaded at:
 * test/y_test.txt
 * test/subject_test.txt
 
-###List of the variables to be used taken from the final tidy dataset
+### List of the variables to be used taken from the final tidy dataset
  
 subject activity tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z tBodyAcc-std()-X tBodyAcc-std()-Y tBodyAcc-std()-Z tGravityAcc-mean()-X tGravityAcc-mean()-Y tGravityAcc-mean()-Z tGravityAcc-std()-X tGravityAcc-std()-Y tGravityAcc-std()-Z tBodyAccJerk-mean()-X tBodyAccJerk-mean()-Y tBodyAccJerk-mean()-Z tBodyAccJerk-std()-X tBodyAccJerk-std()-Y tBodyAccJerk-std()-Z tBodyGyro-mean()-X tBodyGyro-mean()-Y tBodyGyro-mean()-Z tBodyGyro-std()-X tBodyGyro-std()-Y tBodyGyro-std()-Z tBodyGyroJerk-mean()-X tBodyGyroJerk-mean()-Y tBodyGyroJerk-mean()-Z tBodyGyroJerk-std()-X tBodyGyroJerk-std()-Y tBodyGyroJerk-std()-Z tBodyAccMag-mean() tBodyAccMag-std() tGravityAccMag-mean() tGravityAccMag-std() tBodyAccJerkMag-mean() tBodyAccJerkMag-std() tBodyGyroMag-mean() tBodyGyroMag-std() tBodyGyroJerkMag-mean() tBodyGyroJerkMag-std() fBodyAcc-mean()-X fBodyAcc-mean()-Y fBodyAcc-mean()-Z fBodyAcc-std()-X fBodyAcc-std()-Y fBodyAcc-std()-Z fBodyAccJerk-mean()-X fBodyAccJerk-mean()-Y fBodyAccJerk-mean()-Z fBodyAccJerk-std()-X fBodyAccJerk-std()-Y fBodyAccJerk-std()-Z fBodyGyro-mean()-X fBodyGyro-mean()-Y fBodyGyro-mean()-Z fBodyGyro-std()-X fBodyGyro-std()-Y fBodyGyro-std()-Z fBodyAccMag-mean() fBodyAccMag-std() fBodyBodyAccJerkMag-mean() fBodyBodyAccJerkMag-std() fBodyBodyGyroMag-mean() fBodyBodyGyroMag-std() fBodyBodyGyroJerkMag-mean() fBodyBodyGyroJerkMag-std()
 
-###Requirements
+### Requirements
 
 * The submitted data set is tidy.
 * The Github repo contains the required scripts.
@@ -43,7 +39,7 @@ subject activity tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z tBodyAcc-
 * The README that explains the analysis files is clear and understandable.
 * The work submitted for this project is the work of the student who submitted it.
 
-###List of steps peformed to create the tidy dataset and meet the requirements of the course:
+### List of steps peformed to create the tidy dataset and meet the requirements of the course:
 
 * Read all relevant tables listed above using ```read.table```
 * Merged the test and training files seperately using ```cbind```
@@ -55,7 +51,7 @@ activity_levels using ```factor```
 * Got the averages for each subject and activity using ```aggregate```
 * wrote the table to an independent tidy data set using ```write.csv```
 
-###Files output for this project
+### Files output for this project
 ```run_analysis.R``` - code to create the tidy dataset
 
 ```dataset.csv``` - the final tidy dataset
